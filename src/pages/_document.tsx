@@ -41,6 +41,11 @@ export default function Document(ctx: DocumentContext) {
           content="مكتب محاسبة ومراجعة M1 GROUP للاستشارات الضريبية والقانونية"
         />
         <meta name="twitter:label1" content="Written by Ahmed Ghonim" />
+
+        <meta
+          name="google-site-verification"
+          content="O3e44RBjvHwhcdVwBLbuKLh4qyYcX_d9lOx0AjHWtbM"
+        />
       </Head>
       <body>
         <Main />
