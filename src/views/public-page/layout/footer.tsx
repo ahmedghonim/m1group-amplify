@@ -26,18 +26,29 @@ const Company = () => {
       </Text>
       <ul>
         <li>
+          <Link href="/" className="font-medium font-Lato">
+            {t("home")}
+          </Link>
+        </li>
+
+        <li>
+          <Link href="/about-us" className="font-medium font-Lato">
+            {t("about_us")}
+          </Link>
+        </li>
+        <li>
+          <Link href="/contact-us" className="font-medium font-Lato">
+            {t("contact_us")}
+          </Link>
+        </li>
+        <li>
           <Link href="/our-services" className="font-medium font-Lato">
             {t("our_services")}
           </Link>
         </li>
-        <li className="my-[20px]">
-          <Link href="#" className="font-medium font-Lato">
-            {t("our_industries")}
-          </Link>
-        </li>
         <li>
-          <Link href="/about-us" className="font-medium font-Lato">
-            {t("about_us")}
+          <Link href="/faq" className="font-medium font-Lato">
+            {t("fqa")}
           </Link>
         </li>
       </ul>
@@ -68,8 +79,17 @@ const Contacts = () => {
           <Location />
         </div>
         <address className="font-Lato font-semibold text-sm">
-          - {t("address_eg")}
-          <br />- {t("address_du")}
+          {t("address_eg")}
+          <br />
+        </address>
+      </div>
+      <div className="flex items-center gap-4 my-[10px]">
+        <div>
+          <Location />
+        </div>
+        <address className="font-Lato font-semibold text-sm">
+          {t("address_du")}
+          <br />
         </address>
       </div>
       <div className="flex items-center gap-4">

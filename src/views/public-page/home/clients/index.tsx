@@ -32,7 +32,7 @@ export default function Clients() {
       <Text
         as="h3"
         font="bold"
-        className="!text-[28px] md:!text-[48px] md:mb-[30px]"
+        className="!text-[28px] md:!text-[48px] md:mb-[30px] lg:w-3/4 mx-auto"
       >
         {t("our_clients")}
       </Text>
@@ -78,6 +78,9 @@ export default function Clients() {
           <SwiperArrow />
         </button>
       </div>
+      <Text as="p" className="mt-8 !text-[20px]">
+        {t("client_sub_word")}
+      </Text>
     </div>
   );
 }

@@ -27,25 +27,25 @@ export default function AboutUS() {
               as="p"
               className="!text-start leading-8 font-Lato !text-[16px] md:text-[21px]"
             >
-              - {t("about_us_1")}
+              • {t("about_us_1")}
             </Text>
             <Text
               as="p"
               className="!text-start leading-8 font-Lato !text-[16px] md:text-[21px]"
             >
-              - {t("about_us_2")}
+              • {t("about_us_2")}
             </Text>
             <Text
               as="p"
               className="!text-start leading-8 font-Lato !text-[16px] md:text-[21px]"
             >
-              - {t("about_us_3")}
+              • {t("about_us_3")}
             </Text>
             <Text
               as="p"
               className="!text-start leading-8 font-Lato !text-[16px] md:text-[21px]"
             >
-              - {t("about_us_4")}
+              • {t("about_us_4")}
             </Text>
           </div>
           <Link
