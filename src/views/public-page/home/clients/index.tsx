@@ -78,7 +78,7 @@ export default function Clients() {
           <SwiperArrow />
         </button>
       </div>
-      <Text as="p" className="mt-8 !text-[20px]">
+      <Text as="p" font="bold" className="mt-8 !text-[20px]">
         {t("client_sub_word")}
       </Text>
     </div>
