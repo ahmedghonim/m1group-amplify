@@ -9,33 +9,6 @@ import useTranslation from "next-translate/useTranslation";
 import Head from "next/head";
 import Link from "next/link";
 
-const services = [
-  {
-    image: "",
-    service_name: "Service Name",
-  },
-  {
-    image: "",
-    service_name: "Service Name",
-  },
-  {
-    image: "",
-    service_name: "Service Name",
-  },
-  {
-    image: "",
-    service_name: "Service Name",
-  },
-  {
-    image: "",
-    service_name: "Service Name",
-  },
-  {
-    image: "",
-    service_name: "Service Name",
-  },
-];
-
 export default function IndexPage() {
   const { t } = useTranslation("common");
   return (

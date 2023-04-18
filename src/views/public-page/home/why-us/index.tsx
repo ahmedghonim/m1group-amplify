@@ -41,8 +41,8 @@ export default function WhyUs() {
 
       <div className="grid lg:grid-cols-3 grid-cols-1 gap-6">
         <SingleCard title="vision" Icon={Vision} desc="vision_desc" />
-        <SingleCard title="objective" Icon={Objective} desc="objective_desc" />
         <SingleCard title="mission" Icon={Mission} desc="mission_desc" />
+        <SingleCard title="objective" Icon={Objective} desc="objective_desc" />
       </div>
     </div>
   );
