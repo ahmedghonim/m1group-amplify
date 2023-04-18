@@ -6,7 +6,7 @@ const servesData = [
     desc_en:
       "<ul><li>Directing and assisting financial departments in preparing financial statements in accordance with the Egyptian accounting standards.</li><li> Providing the necessary advice and assistance to the higher departments of the money companies to prepare the management report on the company's activity in each financial period in accordance with the requirements of the law .</li><li>	Reviewing and auditing financial statements according to the auditing standards in light of the provisions of the applicable local laws and instructions, and then issuing audit reports for that .</li><li>Coordination with the management of money companies ( Contribution – Limited Liability ) To invite the company's regular general assembly to consider approving financial statements, management reports, the auditor, attending the meeting and signing all The papers necessary for him as an auditor of the company.</li><li>Organizing, maintaining or supervising accounts in the best and easiest way.</li></ul>",
     desc_ar:
-      "<ul><li>توجيه ومساعدة الإدارات المالية في إعداد البيانات المالية وفقاً لمعايير المحاسبة المصرية. </li> <li>تقديم المشورة والمساعدة اللازمتين للإدارات العليا لشركات المال لإعداد التقرير الإداري عن نشاط الشركة في كل فترة مالية وفقاً لمتطلبات القانون. </li><li>مراجعة وتدقيق البيانات المالية وفق معايير المراجعة في ضوء أحكام القوانين والتعليمات المحلية المعمول بها ، ومن ثم إصدار تقارير تدقيق لذلك. </li><li>التنسيق مع إدارة شركات المال (مساهمة - ذات مسؤولية محدودة) دعوة الجمعية العمومية العادية للشركة للنظر في اعتماد البيانات المالية وتقارير الإدارة ومدقق الحسابات وحضور الاجتماع وتوقيع جميع الأوراق اللازمة له كمدقق حسابات الشركة.</li><li> تنظيم الحسابات أو إدارتها أو الإشراف عليها بأفضل الطرق وأسهلها.</li></ul>",
+      "<ul><li>توجيه ومساعدة الإدارات المالية في إعداد البيانات المالية وفقاً لمعايير المحاسبة المصرية. </li> <li>تقديم المشورة والمساعدة اللازمتين للإدارات العليا لشركات المال لإعداد التقرير الإداري عن نشاط الشركة في كل فترة مالية وفقاً لمتطلبات القانون. </li><li>مراجعة البيانات المالية وفق معايير المراجعة في ضوء أحكام القوانين والتعليمات المحلية المعمول بها ، ومن ثم إصدار تقارير مراجعة لذلك. </li><li>التنسيق مع إدارة شركات المال (مساهمة - ذات مسؤولية محدودة) دعوة الجمعية العمومية العادية للشركة للنظر في اعتماد البيانات المالية وتقارير الإدارة ومدقق الحسابات وحضور الاجتماع وتوقيع جميع الأوراق اللازمة له كمراجع حسابات الشركة.</li><li> تنظيم الحسابات أو إدارتها أو الإشراف عليها بأفضل الطرق وأسهلها.</li></ul>",
   },
   {
     src: "/audit.jpg",
@@ -15,7 +15,7 @@ const servesData = [
     desc_en:
       "<ul><li>Our Auditing and Assurance service provides insight on the current state of firms, exploring the legitimacy of firms’ financial statements and providing assurance to investors and capital markets.</li><li>M1 group’s dynamic work environment also supports firms’ bookkeeping process to ensure effective reporting in line with the regulatory framework. We strive to provide rich audit insights and evidence, to streamline firms’ growth plans and ambitions.</li></ul>",
     desc_ar:
-      "<ul><li>توفر خدمة المراجعة والتأكيد لدينا نظرة ثاقبة عن الوضع الحالي للشركات ، واستكشاف شرعية البيانات المالية للشركات ’ وتوفير الضمانات للمستثمرين وأسواق رأس المال.</li><li>تدعم بيئة العمل الديناميكيه    لمجموعه  M1Groupعملية مسك الدفاتر للشركات ’ لضمان إعداد تقارير فعالة تتماشى مع الإطار التنظيمي. نحن نسعى جاهدين لتقديم رؤى وأدلة غنية للتدقيق ، لتبسيط خطط وطموحات النمو للشركات.</li></ul>",
+      "<ul><li>توفر خدمة المراجعة والتأكيد لدينا نظرة ثاقبة عن الوضع الحالي للشركات ، واستكشاف شرعية البيانات المالية للشركات ’ وتوفير الضمانات للمستثمرين وأسواق رأس المال.</li><li>تدعم بيئة العمل الديناميكيه    لمجموعه  M1Groupعملية مسك الدفاتر للشركات ’ لضمان إعداد تقارير فعالة تتماشى مع الإطار التنظيمي. نحن نسعى جاهدين لتقديم رؤى وأدلة غنية للمراجعة ، لتبسيط خطط وطموحات النمو للشركات.</li></ul>",
   },
   {
     src: "/tax-1.jpg",
@@ -24,7 +24,7 @@ const servesData = [
     desc_en:
       "<ul><li>Preparing and submitting tax returns for general taxes and added value on sound professional grounds and in accordance with the requirements of laws and instructions in force and handing them over or following up on their delivery to various orders in legal dates.</li><li>	Carrying out the necessary review, auditing and preparation of tax examination and accounting work for all types of taxes, and he took this with the relevant tax orders .</li></ul>",
     desc_ar:
-      "<ul><li>إعداد وتقديم الإقرارات الضريبية للضرائب العامة والقيمة المضافة على أسس مهنية سليمة ووفقاً لمتطلبات القوانين والتعليمات النافذة وتسليمها أو متابعة تسليمها لأوامر مختلفة في مواعيد قانونية.</li><li> القيام بما يلزم من المراجعة والتدقيق وإعداد أعمال الفحص والمحاسبة الضريبية لجميع أنواع الضرائب ، وأخذ ذلك مع الأوامر الضريبية ذات الصلة. </li></ul>",
+      "<ul><li>إعداد وتقديم الإقرارات الضريبية للضرائب العامة والقيمة المضافة على أسس مهنية سليمة ووفقاً لمتطلبات القوانين والتعليمات النافذة وتسليمها أو متابعة تسليمها لأوامر مختلفة في مواعيد قانونية.</li><li> القيام بما يلزم من المراجعة والمراجعة وإعداد أعمال الفحص والمحاسبة الضريبية لجميع أنواع الضرائب ، وأخذ ذلك مع الأوامر الضريبية ذات الصلة. </li></ul>",
   },
   {
     src: "/establish.jpg",
@@ -51,7 +51,7 @@ const servesData = [
     desc_en:
       "<ul><li>M1 group provides training courses in the areas of taxes, accounting and auditing , in an effort to develop employee skill sets and expand their abilities.</li><li>	Through our complete training packages, we aim to create a new caliber of management armed with skills that reflect in the corporate world. It will develop them into visionary decision makers refining the future of corporate life in Egypt. </li></ul>",
     desc_ar:
-      "<ul><li>تقدم مجموعة  M1GROUPدورات تدريبية في مجالات الضرائب والمحاسبة والتدقيق ، في محاولة لتطوير مجموعات مهارات الموظفين و توسيع قدراتهم .</li><li>نحن نهدف إلى إنشاء جيل جديد للإدارة بالمهارات التي تنعكس في عالم الشركات. سوف تطورهم إلى صناع قرار ذوي بصيرة لتحسين مستقبل حياة الشركات في مصر و دبي .</li></ul>",
+      "<ul><li>تقدم مجموعة  M1GROUPدورات تدريبية في مجالات الضرائب والمحاسبة والمراجعة ، في محاولة لتطوير مجموعات مهارات الموظفين و توسيع قدراتهم .</li><li>نحن نهدف إلى إنشاء جيل جديد للإدارة بالمهارات التي تنعكس في عالم الشركات. سوف تطورهم إلى صناع قرار ذوي بصيرة لتحسين مستقبل حياة الشركات في مصر و دبي .</li></ul>",
   },
   {
     src: "/governmental.jpg",

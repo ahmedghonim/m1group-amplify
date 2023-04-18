@@ -52,7 +52,7 @@ function OurService() {
           )
         )}
         <div className="rounded-3xl bg-[#F2E4BF] h-[282px] flex flex-col justify-center items-center gap-7 px-2">
-          <Text as="p" size="md" className="text-black md:w-3/5 ">
+          <Text as="p" size="md" font="bold" className="text-black md:w-3/5 ">
             {t("ourServiceDesc")}
           </Text>
           <LinkButton href="/contact-us" rounded="full">
