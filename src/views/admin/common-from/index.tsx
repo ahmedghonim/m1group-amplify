@@ -1,10 +1,10 @@
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import React from "react";
-import TextEditor from "@ui/atom/text-editor";
-import { Button, Input, Text } from "@ui/atom";
+import TextEditor from "~/ui/atom/text-editor";
+import { Button, Input, Text } from "~/ui/atom";
 import { Form, Formik } from "formik";
 import useTranslation from "next-translate/useTranslation";
-import UploadImage from "@ui/atom/upload-image";
+import UploadImage from "~/ui/atom/upload-image";
 interface Props {
   onSubmit: (values: any) => void;
   initialValues: any;

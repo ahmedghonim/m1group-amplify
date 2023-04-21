@@ -17,12 +17,13 @@ export default function DashboardLayout({
   useEffect(() => {
     if (user === null) {
       push("/login");
-    } else {
+    } else if (user) {
       toast.success(
         t("welcome_to_m1_group", {
           toastId: "welcome_to_m1_group",
         }) as string
       );
+      console.log(" dddd>>>> ");
     }
   }, [user]);
   if (user === null) {
