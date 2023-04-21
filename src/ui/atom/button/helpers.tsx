@@ -2,6 +2,8 @@ export const variants = {
   style: {
     primary:
       "!bg-primary-100 !text-white !h-fit disabled:!opacity-25 hover:!bg-opacity-75",
+    danger:
+      "!text-red-500 !h-fit disabled:!opacity-25",
     secondary:
       "!bg-dark-200 !text-white  disabled:!opacity-25 hover:!bg-opacity-75 hover:!bg-primary-100",
     transparent:
@@ -39,6 +41,7 @@ export type IconProps = "plus";
 export const spinierVariants = {
   primary: "fill-white",
   secondary: "fill-white",
+  danger: "fill-white",
   transparent: "fill-primary-100",
   outline: "fill-primary-100",
 };
@@ -57,7 +60,7 @@ export interface Props {
   form?: boolean;
   isLoading?: boolean;
   type?: "button" | "submit" | "reset";
-  className?: CSSStyleSheet | any;
+  className?: CSSStyleSheet | string;
   children?: React.ReactNode | any;
   disabled?: boolean;
   id?: string;

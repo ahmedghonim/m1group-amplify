@@ -1,24 +1,35 @@
 import React, { useState } from "react";
 import useTranslation from "next-translate/useTranslation";
-import { Text } from "~/ui/atom";
 import Plus from "~/assets/svg/plus.svg";
+import Delete from "~/assets/svg/delete.svg";
+import Edit from "~/assets/svg/edit.svg";
 import clsx from "clsx";
+import { Text } from "~/ui/atom";
 
 interface SingleQuestionProps {
-  number?: number;
   ques: string;
   answer: string;
+  number?: number;
+  onDelete?: () => void;
+  onEdit?: () => void;
 }
 
-const SingleQuestion = ({ ques, answer }: SingleQuestionProps) => {
+export const SingleQuestion = ({
+  ques,
+  answer,
+  onDelete,
+  onEdit,
+}: SingleQuestionProps) => {
   const [clicked, setClicked] = useState<boolean>(false);
+
+  const withActions = onDelete || onEdit !== undefined;
 
   return (
     <div
       className={`collapse py-3 md:py-5 ${
         clicked
-          ? "border-primary-100 border-b-[2px]"
-          : "border-[#C2BBFF] border-b-[1px]"
+          ? "border-b-[2px] border-primary-100"
+          : "border-b-[1px] border-[#C2BBFF]"
       }`}
       onClick={() => setClicked(!clicked)}
     >
@@ -27,6 +38,18 @@ const SingleQuestion = ({ ques, answer }: SingleQuestionProps) => {
         <Text font="mid" className="font-Inter  !text-[16px] md:!text-[24px]">
           {ques}
         </Text>
+
+        {withActions && (
+          <div className="flex items-center gap-4">
+            <button onClick={onEdit}>
+              <Edit />
+            </button>
+            <button onClick={onDelete}>
+              <Delete />
+            </button>
+          </div>
+        )}
+
         <span
           className={clsx("absolute right-2 top-1/2 duration-300 ", {
             "-translate-y-1/2 rotate-[135deg]": clicked,
@@ -37,7 +60,7 @@ const SingleQuestion = ({ ques, answer }: SingleQuestionProps) => {
         </span>
       </div>
       <div className="collapse-content">
-        <Text as="p" className=" md:pb-10 pb-2 !text-start leading-8">
+        <Text as="p" className=" pb-2 leading-8 !text-start md:pb-10">
           {answer}
         </Text>
       </div>
@@ -52,11 +75,11 @@ function FAQS({ questions }: { questions: SingleQuestionProps[] }) {
       <Text
         as="h2"
         font="semi"
-        className="!text-primary-100 font-Inter !text-3xl lg:!text-[48px] mb-4 md:!leading-[65px]"
+        className="mb-4 font-Inter !text-3xl !text-primary-100 md:!leading-[65px] lg:!text-[48px]"
       >
         {t("frequently_head")}
       </Text>
-      <div className="flex flex-col mx-auto lg:px-4">
+      <div className="mx-auto flex flex-col lg:px-4">
         {questions.map((question, index) => {
           return (
             <SingleQuestion

@@ -27,7 +27,6 @@ const ContactInput = ({
         isForm
         label={label}
         className="!text-primary-100"
-        labelStyle="!text-primary-100 font-normal"
       />
     </div>
   );
