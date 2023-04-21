@@ -1,8 +1,8 @@
 import React, { useTransition } from "react";
-import Vision from "@svg/vision-icon.svg";
-import Mission from "@svg/mission.svg";
-import Objective from "@svg/objective.svg";
-import { Text } from "@ui/atom";
+import Vision from "~/assets/svg/vision-icon.svg";
+import Mission from "~/assets/svg/mission.svg";
+import Objective from "~/assets/svg/objective.svg";
+import { Text } from "~/ui/atom";
 import useTranslation from "next-translate/useTranslation";
 
 interface SingleCardType {

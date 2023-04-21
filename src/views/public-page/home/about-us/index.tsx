@@ -1,10 +1,10 @@
-import { Text } from "@ui/atom";
+import { Text } from "~/ui/atom";
 import useTranslation from "next-translate/useTranslation";
 import React from "react";
-import Logo from "@svg/larg-text-logo.svg";
-import MobileLogo from "@svg/mob-large-text-logo.svg";
+import Logo from "~/assets/svg/larg-text-logo.svg";
+import MobileLogo from "~/assets/svg/mob-large-text-logo.svg";
 import Link from "next/link";
-import useScreen from "@hooks/useScreen";
+import useScreen from "~/hooks/useScreen";
 
 export default function AboutUS() {
   const { t } = useTranslation("common");

@@ -15,15 +15,15 @@ export const textVariants = {
     mid: "!font-medium",
   },
   size: {
-    null: '',
-    heading: '!text-[28px] xl:!text-[32px]',
-    normal: '!text-sm md:!text-base',
-    xs: '!text-xs',
-    sm: 'md:!text-sm !text-xs', //14px
-    md: 'md:!text-xl !text-base', //20px
-    xl: 'text-3xl'
-  }
-}
+    null: "",
+    heading: "!text-[28px] xl:!text-[32px]",
+    normal: "!text-sm md:!text-base",
+    xs: "!text-xs",
+    sm: "md:!text-sm !text-xs", //14px
+    md: "md:!text-xl !text-base", //20px
+    xl: "text-3xl",
+  },
+};
 
 interface Props
   extends React.DetailedHTMLProps<
@@ -46,7 +46,7 @@ function Text({
   font = "normal",
   children,
 }: Props) {
-  const Component = as ?? "span";
+  const Component = as ?? "h5";
   return (
     <Component
       className={clsx(

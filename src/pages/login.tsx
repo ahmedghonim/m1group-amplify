@@ -1,10 +1,12 @@
 import { Form, Formik } from "formik";
-import React from "react";
+import React, { useState } from "react";
 import useTranslation from "next-translate/useTranslation";
 import * as yup from "yup";
-import { Button, Input } from "@ui/atom";
+import { Button, Input } from "~/ui/atom";
 import { Auth } from "aws-amplify";
 import { useRouter } from "next/router";
+import { toast } from "react-toastify";
+import { useUser } from "~/context/AuthContext";
 
 const validationSchema = yup.object({
   username: yup.string().required("required"),
@@ -19,14 +21,21 @@ const initialValues: FormData = {
 function Page() {
   const { push } = useRouter();
   const { t } = useTranslation("common");
+  const [loading, setLoading] = useState<boolean>();
+  const { setUser } = useUser();
 
   async function onSubmit(values: FormData) {
+    setLoading(true);
     const { username, password } = values;
     try {
-      await Auth.signIn(username, password);
+      const data = await Auth.signIn(username, password);
+      toast.success(`${t("operation-success")}`);
       push("/admin");
+      setUser(data);
+      setLoading(false);
     } catch (error) {
-      console.error("error signing in", error);
+      toast.success(error as string);
+      setLoading(false);
     }
   }
   return (
@@ -37,7 +46,9 @@ function Page() {
           <Form className="flex flex-col gap-5">
             <Input isForm name="username" />
             <Input isForm name="password" type="password" />
-            <Button type="submit">{t("login")}</Button>
+            <Button isLoading={loading} type="submit">
+              {t("login")}
+            </Button>
           </Form>
         </Formik>
       </div>

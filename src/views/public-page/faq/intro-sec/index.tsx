@@ -1,9 +1,9 @@
-import IntroSection from "@views/shared/intro-section";
+import IntroSection from "~/views/shared/intro-section";
 import useTranslation from "next-translate/useTranslation";
 import React from "react";
-import FAQCover from "@image/contact-cover.png";
-import { Button, Text } from "@ui/atom";
-import Search from "@svg/search.svg";
+import FAQCover from "~/assets/image/contact-cover.png";
+import { Button, Text } from "~/ui/atom";
+import Search from "~/assets/svg/search.svg";
 
 export default function FAQIntro() {
   const { t } = useTranslation("common");

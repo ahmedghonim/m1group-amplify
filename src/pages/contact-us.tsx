@@ -1,10 +1,10 @@
-import IntroSection from "@views/shared/intro-section";
+import IntroSection from "~/views/shared/intro-section";
 import useTranslation from "next-translate/useTranslation";
 import Head from "next/head";
 import React from "react";
-import ContactCover from "@image/contact-cover.png";
-import { Text } from "@ui/atom";
-import ContactUsForm from "@views/public-page/contact-us";
+import ContactCover from "~/assets/image/contact-cover.png";
+import { Text } from "~/ui/atom";
+import ContactUsForm from "~/views/public-page/contact-us";
 
 export default function ContactUsSSS() {
   const { t } = useTranslation("pages-title");

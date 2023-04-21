@@ -1,7 +1,7 @@
-import { Text } from "@ui/atom";
+import { Text } from "~/ui/atom";
 import useTranslation from "next-translate/useTranslation";
 import React, { useRef } from "react";
-import SwiperArrow from "@svg/swiper-arrow.svg";
+import SwiperArrow from "~/assets/svg/swiper-arrow.svg";
 
 /* ------- Swiper Imports ------ */
 import { Swiper, SwiperSlide } from "swiper/react";

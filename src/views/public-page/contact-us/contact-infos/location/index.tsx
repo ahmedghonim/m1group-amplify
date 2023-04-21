@@ -1,5 +1,5 @@
 import React from "react";
-import AddressIcon from "@svg/address.svg";
+import AddressIcon from "~/assets/svg/address.svg";
 import useTranslation from "next-translate/useTranslation";
 
 function Address({ children }: { children: React.ReactNode }) {

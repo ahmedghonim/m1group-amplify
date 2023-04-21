@@ -1,10 +1,25 @@
 {
   "api": {
     "m1group": {
-      "dependsOn": [],
+      "dependsOn": [
+        {
+          "attributes": [
+            "UserPoolId"
+          ],
+          "category": "auth",
+          "resourceName": "m1group382bfa7c"
+        }
+      ],
       "output": {
         "authConfig": {
-          "additionalAuthenticationProviders": [],
+          "additionalAuthenticationProviders": [
+            {
+              "authenticationType": "AMAZON_COGNITO_USER_POOLS",
+              "userPoolConfig": {
+                "userPoolId": "authm1group382bfa7c"
+              }
+            }
+          ],
           "defaultAuthentication": {
             "apiKeyConfig": {
               "apiKeyExpirationDays": 7
@@ -41,6 +56,13 @@
       },
       "providerPlugin": "awscloudformation",
       "service": "Cognito"
+    }
+  },
+  "storage": {
+    "images": {
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "S3"
     }
   }
 }

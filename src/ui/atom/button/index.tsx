@@ -1,6 +1,6 @@
 import clsx from "clsx";
 import React from "react";
-import Spinier from "@svg/spinier.svg";
+import Spinier from "~/assets/svg/spinier.svg";
 import {
   IconRender,
   Props,

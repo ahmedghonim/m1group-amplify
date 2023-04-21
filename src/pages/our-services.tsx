@@ -1,11 +1,11 @@
-import { LinkButton, Text } from "@ui/atom";
-import IntroSection from "@views/shared/intro-section";
-import ServesView, { ServesViewProps } from "@views/public-page/our-serves";
-import servesData from "@views/public-page/our-serves/mockdata";
+import { LinkButton, Text } from "~/ui/atom";
+import IntroSection from "~/views/shared/intro-section";
+import ServesView, { ServesViewProps } from "~/views/public-page/our-serves";
+import servesData from "~/views/public-page/our-serves/mockdata";
 import useTranslation from "next-translate/useTranslation";
 import Head from "next/head";
 import React from "react";
-import ServicesCover from "@image/services-cover.png";
+import ServicesCover from "~/assets/image/services-cover.png";
 
 function OurService() {
   const { t } = useTranslation("common");

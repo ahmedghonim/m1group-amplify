@@ -7,3 +7,40 @@ type Todo @model {
   name: String!
   description: String
 }
+
+type AboutUs
+  @model
+  @auth(
+    rules: [
+      {
+        allow: owner
+        ownerField: "owner"
+        operations: [create, update, delete]
+      }
+      { allow: public, operations: [read] }
+    ]
+  ) {
+  id: ID!
+  desc_ar: String!
+  desc_en: String!
+}
+
+type OurService
+  @model
+  @auth(
+    rules: [
+      {
+        allow: owner
+        ownerField: "owner"
+        operations: [create, update, delete]
+      }
+      { allow: public, operations: [read] }
+    ]
+  ) {
+  id: ID!
+  title_ar: String!
+  title_en: String!
+  desc_ar: String!
+  desc_en: String!
+  image: String!
+}

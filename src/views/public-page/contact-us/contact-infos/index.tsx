@@ -2,13 +2,13 @@ import React from "react";
 import useTranslation from "next-translate/useTranslation";
 import Address from "./location";
 import ContactDetails from "./details";
-import ContactCircles from "@svg/contact-circles.svg";
-import Facebook from "@svg/facebook_w.svg";
-import Linkedin from "@svg/linkedin_w.svg";
-import Instagram from "@svg/instagram_w.svg";
-import Twitter from "@svg/twitter_2_w.svg";
-import Snap from "@svg/snap_w.svg";
-import { Text } from "@ui/atom";
+import ContactCircles from "~/assets/svg/contact-circles.svg";
+import Facebook from "~/assets/svg/facebook_w.svg";
+import Linkedin from "~/assets/svg/linkedin_w.svg";
+import Instagram from "~/assets/svg/instagram_w.svg";
+import Twitter from "~/assets/svg/twitter_2_w.svg";
+import Snap from "~/assets/svg/snap_w.svg";
+import { Text } from "~/ui/atom";
 import Link from "next/link";
 
 function ContactInfo() {

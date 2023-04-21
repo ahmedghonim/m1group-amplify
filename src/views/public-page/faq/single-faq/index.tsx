@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import useTranslation from "next-translate/useTranslation";
-import { Text } from "@ui/atom";
-import Plus from "@svg/plus.svg";
+import { Text } from "~/ui/atom";
+import Plus from "~/assets/svg/plus.svg";
 import clsx from "clsx";
 
 interface SingleQuestionProps {

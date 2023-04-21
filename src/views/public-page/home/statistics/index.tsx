@@ -1,4 +1,4 @@
-import { Text } from "@ui/atom";
+import { Text } from "~/ui/atom";
 import clsx from "clsx";
 import useTranslation from "next-translate/useTranslation";
 import React from "react";

@@ -2,8 +2,10 @@ import { Form, Formik } from "formik";
 import React from "react";
 import useTranslation from "next-translate/useTranslation";
 import * as yup from "yup";
-import { Button, Input } from "@ui/atom";
+import { Button, Input } from "~/ui/atom";
 import { Auth } from "aws-amplify";
+import { useRouter } from "next/router";
+import { toast } from "react-toastify";
 
 const validationSchema = yup.object({
   username: yup.string().required("required"),
@@ -19,16 +21,18 @@ const initialValues: FormData = {
 };
 function Page() {
   const { t } = useTranslation("common");
-
+  const { push } = useRouter();
   async function onSubmit(values: FormData) {
     const { username, password, email } = values;
-    const { user } = await Auth.signUp({
+    await Auth.signUp({
       username,
       password,
       attributes: {
         email,
       },
     });
+    toast.success(`${t("operation-success")}`);
+    push("/login");
   }
 
   return (
@@ -40,7 +44,7 @@ function Page() {
             <Input isForm name="username" />
             <Input isForm name="email" type="email" />
             <Input isForm name="password" type="password" />
-            <Button type="submit">{t("login")}</Button>
+            <Button type="submit">{t("singup")}</Button>
           </Form>
         </Formik>
       </div>

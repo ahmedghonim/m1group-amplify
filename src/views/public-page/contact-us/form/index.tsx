@@ -2,7 +2,7 @@ import React from "react";
 import useTranslation from "next-translate/useTranslation";
 import { Form, Formik } from "formik";
 import * as Yup from "yup";
-import { Button, Input } from "@ui/atom";
+import { Button, Input } from "~/ui/atom";
 
 interface ContactInputProps {
   placeHolder: string;

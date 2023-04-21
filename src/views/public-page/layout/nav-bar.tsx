@@ -1,17 +1,17 @@
 import Link from "next/link";
 import React, { useState } from "react";
-import TextLogo from "@svg/text-logo.svg";
+import TextLogo from "~/assets/svg/text-logo.svg";
 import clsx from "clsx";
 import useTranslation from "next-translate/useTranslation";
-import { Button } from "@ui/atom";
+import { Button } from "~/ui/atom";
 import { useRouter } from "next/router";
-import MenuIcon from "@svg/menu.svg";
-import AboutIcon from "@svg/about-us.svg";
-import OurServesIcon from "@svg/our-serves.svg";
-import FQAIcon from "@svg/fqa.svg";
-import LogoIcon from "@svg/logo.svg";
-import ChangeLang from "@views/shared/change-lang";
-import VerticalBar from "@views/shared/vertical-bar";
+import MenuIcon from "~/assets/svg/menu.svg";
+import AboutIcon from "~/assets/svg/about-us.svg";
+import OurServesIcon from "~/assets/svg/our-serves.svg";
+import FQAIcon from "~/assets/svg/fqa.svg";
+import LogoIcon from "~/assets/svg/logo.svg";
+import ChangeLang from "~/views/shared/change-lang";
+import VerticalBar from "~/views/shared/vertical-bar";
 
 function NavBar() {
   const { t } = useTranslation("pages-title");

@@ -1,6 +1,6 @@
-import TextEditor from "@ui/atom/text-editor";
-import UploadImage from "@ui/atom/upload-image";
-import { Button, Input } from "@ui/atom";
+import TextEditor from "~/ui/atom/text-editor";
+import UploadImage from "~/ui/atom/upload-image";
+import { Button, Input } from "~/ui/atom";
 import { Form, Formik } from "formik";
 import * as yup from "yup";
 import useTranslation from "next-translate/useTranslation";

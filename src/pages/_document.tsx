@@ -4,9 +4,10 @@ export default function Document(ctx: DocumentContext) {
   return (
     <Html dir={ctx.locale === "ar" ? "rtl" : "ltr"} lang={ctx.locale}>
       <Head>
-        <title>
-          مكتب محاسبة ومراجعة للاستشارات الضريبية والقانونية M1 GROUP
-        </title>
+        <meta
+          name="title"
+          content=" مكتب محاسبة ومراجعة للاستشارات الضريبية والقانونية M1 GROUP"
+        />
         <meta
           name="keywords"
           content="محاسبون قانونيون و مراجعون و خدمات ضرائب, محاسب ضرائب, خبير ضرائب ، تأسيس مؤسسه ، مكتب محاسب قانوني ، فض منازعات, خبير مثمن ، محاسب ضرائب ، مستشار قانوني ، مراجعه حسابات، مقيم عقارات ،مراقب حسابات ، شهاده محاسب قانوني ،مراجع حسابات ، شهاده إدارة محاسب"

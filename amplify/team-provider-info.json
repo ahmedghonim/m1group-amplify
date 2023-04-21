@@ -17,6 +17,9 @@
       },
       "api": {
         "m1group": {}
+      },
+      "storage": {
+        "images": {}
       }
     }
   }

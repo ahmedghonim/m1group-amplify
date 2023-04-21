@@ -1,5 +1,5 @@
-import FAQIntro from "@views/public-page/faq/intro-sec";
-import FAQS from "@views/public-page/faq/single-faq";
+import FAQIntro from "~/views/public-page/faq/intro-sec";
+import FAQS from "~/views/public-page/faq/single-faq";
 import useTranslation from "next-translate/useTranslation";
 import Head from "next/head";
 import React from "react";

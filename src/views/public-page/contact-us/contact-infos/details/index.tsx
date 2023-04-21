@@ -1,5 +1,5 @@
 import React from "react";
-import Mail from "@svg/contact-mail.svg";
+import Mail from "~/assets/svg/contact-mail.svg";
 
 function ContactDetails({ children }: { children: React.ReactNode }) {
   return (
@@ -13,9 +13,9 @@ function ContactDetails({ children }: { children: React.ReactNode }) {
           </a>
           <a
             className="text-white font-bold break-all"
-            href="mailto:mohamed@gmail.com"
+            href="mailto:mohamed~/gmail.com"
           >
-            smart77acc@gmail.com
+            smart77acc~/gmail.com
           </a>
         </div>
       </div>

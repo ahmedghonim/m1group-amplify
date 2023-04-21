@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import DeleteIcon from "@svg/delete.svg";
-import UploadImageIcon from "@svg/upload-image.svg";
+import DeleteIcon from "~/assets/svg/delete.svg";
+import UploadImageIcon from "~/assets/svg/upload-image.svg";
 import { ErrorMessage, useFormikContext } from "formik";
 
 interface Props {
@@ -10,14 +10,15 @@ interface Props {
 
 function UploadImage({ name = "image" }: Props) {
   const { setFieldValue, values }: any = useFormikContext();
-
+  const [image, setImage] = React.useState<string | Buffer>("");
   function onChange(e: React.FormEvent<HTMLInputElement> | any) {
     const file = e.target.files[0];
     const reader = new FileReader();
 
     reader.onload = () => {
-      setFieldValue(name, reader.result?.toString() as string);
+      setImage(reader.result?.toString() as string);
     };
+    setFieldValue(name, file);
     reader.readAsDataURL(file);
   }
   return (
@@ -36,7 +37,7 @@ function UploadImage({ name = "image" }: Props) {
               type="file"
               name={name}
               id={name}
-              value={values[name]}
+              value={image as string}
               onChange={onChange}
               hidden
             />
@@ -44,7 +45,7 @@ function UploadImage({ name = "image" }: Props) {
         ) : (
           <>
             <Image
-              src={values[name] as string}
+              src={image as string}
               alt="dd"
               className="w-full h-full"
               width={300}
@@ -53,7 +54,10 @@ function UploadImage({ name = "image" }: Props) {
             <Image
               className="absolute bottom-2 mx-2 cursor-pointer"
               alt="delete icon"
-              onClick={() => setFieldValue(name, "")}
+              onClick={() => {
+                setFieldValue(name, "");
+                setImage("");
+              }}
               src={DeleteIcon}
               width={25}
               height={30}

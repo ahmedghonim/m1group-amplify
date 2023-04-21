@@ -1,9 +1,10 @@
-import DashboardLayout from "@views/admin/layout";
-import PublicLayout from "@views/public-page/layout";
+import DashboardLayout from "~/views/admin/layout";
+import PublicLayout from "~/views/public-page/layout";
 import { useRouter } from "next/router";
 import React from "react";
 import { ToastContainer } from "react-toastify";
-
+import "react-toastify/dist/ReactToastify.css";
+import AuthContext from "~/context/AuthContext";
 interface Props {
   children: React.ReactNode;
 }
@@ -16,6 +17,7 @@ const Toast = () => (
     newestOnTop={false}
     closeOnClick
     rtl={true}
+    limit={1}
     pauseOnFocusLoss
     draggable
     pauseOnHover
@@ -24,12 +26,17 @@ const Toast = () => (
 
 function LayoutProvider({ children }: Props): JSX.Element {
   const { asPath } = useRouter();
+  const pattern = /\blogin\b/;
+
+  if (pattern.test(asPath)) return children as JSX.Element;
 
   return applyLayoutFor(asPath) ? (
-    <DashboardLayout>
-      {children}
-      <Toast />
-    </DashboardLayout>
+    <AuthContext>
+      <DashboardLayout>
+        {children}
+        <Toast />
+      </DashboardLayout>
+    </AuthContext>
   ) : (
     <PublicLayout>
       {children}

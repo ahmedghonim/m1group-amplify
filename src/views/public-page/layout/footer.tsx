@@ -1,16 +1,16 @@
 import React from "react";
-import Logo from "@svg/logo.svg";
-import { Button, Text } from "@ui/atom";
+import Logo from "~/assets/svg/logo.svg";
+import { Button, Text } from "~/ui/atom";
 import useTranslation from "next-translate/useTranslation";
 import Link from "next/link";
-import Phone from "@svg/phone-icon.svg";
-import Location from "@svg/location.svg";
-import Mail from "@svg/mail.svg";
-import Facebook from "@svg/facebook.svg";
-import Linkedin from "@svg/linkedin.svg";
-import Instagram from "@svg/instagram.svg";
-import Twitter from "@svg/twitter_2.svg";
-import Snap from "@svg/snap.svg";
+import Phone from "~/assets/svg/phone-icon.svg";
+import Location from "~/assets/svg/location.svg";
+import Mail from "~/assets/svg/mail.svg";
+import Facebook from "~/assets/svg/facebook.svg";
+import Linkedin from "~/assets/svg/linkedin.svg";
+import Instagram from "~/assets/svg/instagram.svg";
+import Twitter from "~/assets/svg/twitter_2.svg";
+import Snap from "~/assets/svg/snap.svg";
 
 const Company = () => {
   const { t } = useTranslation("common");
@@ -95,7 +95,7 @@ const Contacts = () => {
       <div className="flex items-center gap-4">
         <Mail />
         <Text font="semi" className="font-Lato">
-          smart77acc@gmail.com
+          smart77acc~/gmail.com
         </Text>
       </div>
     </div>
